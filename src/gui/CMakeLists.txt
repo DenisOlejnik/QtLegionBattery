@@ -2,12 +2,13 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 qt_wrap_ui(UI_HEADERS
     mainwindow.ui
+    batterystatus.ui
 )
 
 add_library(battery_gui
     STATIC
         mainwindow.h mainwindow.cpp
-
+        batterystatus.h batterystatus.cpp
     ${UI_HEADERS}
 )
 
