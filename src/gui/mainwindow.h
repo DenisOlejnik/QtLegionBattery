@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QSharedPointer>
+
+#include "batterystatus.h"
+#include "batteryconfiguration.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,5 +21,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    BatteryStatus* m_batteryStatus;
+    BatteryConfiguration* m_batteryConfig;
 };
 #endif // MAINWINDOW_H

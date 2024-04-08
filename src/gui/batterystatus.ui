@@ -14,20 +14,22 @@
    <string>Form</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
-    <widget class="QLabel" name="labelChargingStatus">
-     <property name="text">
-      <string>*BATTERY STATUS*</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
    <item>
     <widget class="QProgressBar" name="progressBarChargeLevel">
      <property name="value">
       <number>24</number>
+     </property>
+     <property name="format">
+      <string>*charging* %p%</string>
      </property>
     </widget>
    </item>
